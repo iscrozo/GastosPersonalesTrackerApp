@@ -14,7 +14,18 @@
 		647F9E102AEA914B003CABCB /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F9E0F2AEA914B003CABCB /* Expenses.swift */; };
 		647F9E132AEA9167003CABCB /* ExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F9E122AEA9167003CABCB /* ExpensesViewModel.swift */; };
 		647F9E162AEA91AA003CABCB /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F9E152AEA91AA003CABCB /* AddExpenseView.swift */; };
+		767E1E4C2AFE5B8700692BF2 /* GastosPersonalesTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E1E4B2AFE5B8700692BF2 /* GastosPersonalesTrackerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		767E1E4D2AFE5B8700692BF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647F9DF52AEA90AB003CABCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647F9DFC2AEA90AC003CABCB;
+			remoteInfo = GastosPersonalesTracker;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		647F9DFD2AEA90AC003CABCB /* GastosPersonalesTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GastosPersonalesTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +36,19 @@
 		647F9E0F2AEA914B003CABCB /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		647F9E122AEA9167003CABCB /* ExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewModel.swift; sourceTree = "<group>"; };
 		647F9E152AEA91AA003CABCB /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		767E1E492AFE5B8700692BF2 /* GastosPersonalesTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GastosPersonalesTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767E1E4B2AFE5B8700692BF2 /* GastosPersonalesTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastosPersonalesTrackerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		647F9DFA2AEA90AC003CABCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767E1E462AFE5B8700692BF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				647F9DFF2AEA90AC003CABCB /* GastosPersonalesTracker */,
+				767E1E4A2AFE5B8700692BF2 /* GastosPersonalesTrackerTests */,
 				647F9DFE2AEA90AC003CABCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				647F9DFD2AEA90AC003CABCB /* GastosPersonalesTracker.app */,
+				767E1E492AFE5B8700692BF2 /* GastosPersonalesTrackerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +122,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		767E1E4A2AFE5B8700692BF2 /* GastosPersonalesTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				767E1E4B2AFE5B8700692BF2 /* GastosPersonalesTrackerTests.swift */,
+			);
+			path = GastosPersonalesTrackerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +150,24 @@
 			productReference = 647F9DFD2AEA90AC003CABCB /* GastosPersonalesTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		767E1E482AFE5B8700692BF2 /* GastosPersonalesTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767E1E512AFE5B8700692BF2 /* Build configuration list for PBXNativeTarget "GastosPersonalesTrackerTests" */;
+			buildPhases = (
+				767E1E452AFE5B8700692BF2 /* Sources */,
+				767E1E462AFE5B8700692BF2 /* Frameworks */,
+				767E1E472AFE5B8700692BF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767E1E4E2AFE5B8700692BF2 /* PBXTargetDependency */,
+			);
+			name = GastosPersonalesTrackerTests;
+			productName = GastosPersonalesTrackerTests;
+			productReference = 767E1E492AFE5B8700692BF2 /* GastosPersonalesTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,11 +175,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					647F9DFC2AEA90AC003CABCB = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					767E1E482AFE5B8700692BF2 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 647F9DFC2AEA90AC003CABCB;
 					};
 				};
 			};
@@ -149,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				647F9DFC2AEA90AC003CABCB /* GastosPersonalesTracker */,
+				767E1E482AFE5B8700692BF2 /* GastosPersonalesTrackerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +213,13 @@
 			files = (
 				647F9E082AEA90AD003CABCB /* Preview Assets.xcassets in Resources */,
 				647F9E052AEA90AD003CABCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767E1E472AFE5B8700692BF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +238,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		767E1E452AFE5B8700692BF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767E1E4C2AFE5B8700692BF2 /* GastosPersonalesTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		767E1E4E2AFE5B8700692BF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647F9DFC2AEA90AC003CABCB /* GastosPersonalesTracker */;
+			targetProxy = 767E1E4D2AFE5B8700692BF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		647F9E092AEA90AD003CABCB /* Debug */ = {
@@ -353,6 +429,53 @@
 			};
 			name = Release;
 		};
+		767E1E4F2AFE5B8700692BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84664PFYLJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iscrozo.GastosPersonalesTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GastosPersonalesTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GastosPersonalesTracker";
+			};
+			name = Debug;
+		};
+		767E1E502AFE5B8700692BF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84664PFYLJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iscrozo.GastosPersonalesTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GastosPersonalesTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GastosPersonalesTracker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +493,15 @@
 			buildConfigurations = (
 				647F9E0C2AEA90AD003CABCB /* Debug */,
 				647F9E0D2AEA90AD003CABCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767E1E512AFE5B8700692BF2 /* Build configuration list for PBXNativeTarget "GastosPersonalesTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767E1E4F2AFE5B8700692BF2 /* Debug */,
+				767E1E502AFE5B8700692BF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
